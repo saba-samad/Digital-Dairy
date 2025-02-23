@@ -41,23 +41,23 @@ def save_entries(entries):
 entries = load_entries()
 
 # ---------------------------- UI Setup ----------------------------
-st.set_page_config(page_title="📖 My Digital Diary (Mini Todo App, Goal Reminder)", layout="wide")
+st.set_page_config(page_title="📖 My Digital Diary (Todo App, Goal Reminder)", layout="wide")
 
 # Sidebar (History)
 st.sidebar.title("📜 History")  # Fixed wording
 
 # ---------------------------- Mood Selection ----------------------------
-st.title("📖 My Daily Diary (Mini Todo App, Goal Reminder)")
+st.title("📖 My Daily Diary (Todo App, Goal Reminder)")
 selected_date = st.date_input("📅 Select Date", datetime.date.today())
 formatted_date = selected_date.strftime("%Y-%m-%d (%A)")
 
 st.subheader("😊 How are you feeling today?")
 mood_options = {
-    "😀 Happy": ("Happy", "#9b59b6"),  # Light purple for Happy
-    "😢 Sad": ("Sad", "#3498DB"),
-    "😠 Angry": ("Angry", "#E74C3C"),
+    "😀 Happy": ("Happy", "#3498DB"),  # Light purple for Happy
+    "😢 Sad": ("Sad", "#11cf37"),
+    "😠 Angry": ("Angry", "#b30b13"),
     "😴 Tired": ("Tired", "#f4b400"),
-    "😎 Excited": ("Excited", "#F1C40F")
+    "😎 Excited": ("Excited", "#f542cb")
 }
 
 selected_mood = st.radio("", list(mood_options.keys()))
@@ -65,7 +65,7 @@ mood_text, mood_color = mood_options[selected_mood]
 
 # ---------------------------- Mood Display ----------------------------
 st.markdown(f"""
-    <div style="background:{mood_color}; padding: 12px; border-radius: 12px; color: white; text-align:center;">
+    <div style="background:{mood_color}; padding: 12px; border-radius: 12px; color: yellow; text-align:center;">
         😊 Mood: {mood_text}
     </div>
 """, unsafe_allow_html=True)
@@ -326,7 +326,7 @@ if selected_entry:
 # ---------------------------- Footer ----------------------------
 st.markdown("""
     <div style="text-align: center; padding: 20px; font-size: 20px; color: #555;">
-        <p>All rights reserved to Tabsheera Shakeel</p>
+        <p>All rights reserved to Saba Samad</p>
     </div>
 """, unsafe_allow_html=True)                                                      
 
