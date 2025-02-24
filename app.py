@@ -157,7 +157,7 @@ button_style = f"""
     <style>
     div.stButton > button {{
         background-color: {mood_color} !important;
-        color: white !important;
+        color: yellow !important;
         font-size: 16px;
         padding: 10px;
         border-radius: 10px;

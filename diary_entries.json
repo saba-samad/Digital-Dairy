@@ -1,0 +1,21 @@
+[
+    {
+        "title": "medical test",
+        "date": "2025-02-24 (Monday)",
+        "mood": "Happy",
+        "text": "Today is my medical test . pre-registration for pnc fees 3000 . Fees of medical test is 3000 ",
+        "tags": [
+            "#Health"
+        ],
+        "username": "Saba",
+        "image": "uploaded_images/pic.jpeg",
+        "todo_list": [
+            {
+                "task": "complete all task",
+                "completed": false
+            }
+        ],
+        "goal": "learn python",
+        "quote": ""
+    }
+]
